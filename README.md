@@ -16,23 +16,23 @@ The site is published at: <https://sps23.github.io/little-orchard>
 1. Install dependencies:
 
    ```bash
-   cd blog
+   cd website
    bundle install
    ```
 
 2. Build the site:
 
    ```bash
-   cd blog
+   cd website
    bundle exec jekyll build
    ```
 
-   The generated site will be in `blog/_site/`.
+   The generated site will be in `website/_site/`.
 
 3. Serve locally with live reload:
 
    ```bash
-   cd blog
+   cd website
    bundle exec jekyll serve --config _config.yml,_config.local.yml
    ```
 

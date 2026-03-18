@@ -1,6 +1,6 @@
 # Jekyll build output
-blog/_site/
-blog/.jekyll-cache/
-blog/.jekyll-metadata
-blog/vendor/
-blog/Gemfile.lock
+website/_site/
+website/.jekyll-cache/
+website/.jekyll-metadata
+website/vendor/
+website/Gemfile.lock

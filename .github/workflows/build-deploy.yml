@@ -26,11 +26,11 @@ jobs:
         with:
           ruby-version: '3.2'
           bundler-cache: true
-          working-directory: blog
+          working-directory: website
 
       - name: Build with Jekyll
         run: |
-          cd blog
+          cd website
           bundle exec jekyll build
         env:
           JEKYLL_ENV: production
@@ -38,7 +38,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: blog/_site
+          path: website/_site
 
   deploy:
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
