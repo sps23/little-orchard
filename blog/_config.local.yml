@@ -1,0 +1,4 @@
+# Local development overrides
+# Use with: bundle exec jekyll serve --config _config.yml,_config.local.yml
+baseurl: "/little-orchard"
+url: "http://localhost:4000"
