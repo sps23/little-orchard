@@ -1,0 +1,20 @@
+title: Little Orchard
+description: Little Orchard - Coming Soon
+baseurl: ""
+url: "https://sps23.github.io/little-orchard"
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
