@@ -1,0 +1,37 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3><span class="logo-icon">🌳</span> Little Orchard</h3>
+        <p>Nurturing young minds in a warm, creative, and supportive environment. Where every child blossoms.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          {% for link in site.navigation %}
+          <li><a href="{{ link.url | relative_url }}">{{ link.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact Info</h3>
+        <ul>
+          <li>📍 Main Street, Naas, Co. Kildare</li>
+          <li>📧 <a href="mailto:info@littleorchard.ie">info@littleorchard.ie</a></li>
+          <li>📞 (045) 123 456</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Opening Hours</h3>
+        <ul>
+          <li>Mon – Fri: 7:30 AM – 6:00 PM</li>
+          <li>Saturday: Closed</li>
+          <li>Sunday: Closed</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; {{ site.time | date: '%Y' }} Little Orchard Preschool. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
