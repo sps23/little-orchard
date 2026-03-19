@@ -1,0 +1,16 @@
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a href="{{ '/' | relative_url }}" class="logo">
+      <span class="logo-icon">🌳</span>
+      <span class="logo-text">Little Orchard</span>
+    </a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="main-nav" id="main-nav">
+      {% for link in site.navigation %}
+      <a href="{{ link.url | relative_url }}" class="nav-link {% if page.url == link.url %}active{% endif %}">{{ link.title }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+</header>

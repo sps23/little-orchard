@@ -1,16 +1,32 @@
 title: Little Orchard
-description: Little Orchard - Coming Soon
+description: "Little Orchard Preschool — Nurturing young minds in Naas, Co. Kildare"
 baseurl: "/little-orchard"
 url: "https://sps23.github.io"
 
 # Build settings
 markdown: kramdown
-theme: minima
 
 # Plugins
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+# Navigation menu
+navigation:
+  - title: Home
+    url: /
+  - title: About Us
+    url: /about/
+  - title: Locations
+    url: /locations/
+  - title: Enrollment
+    url: /enrollment/
+  - title: Gallery
+    url: /gallery/
+  - title: Careers
+    url: /career/
+  - title: Contact
+    url: /contact/
 
 # Exclude from processing
 exclude:
