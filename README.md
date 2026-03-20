@@ -43,6 +43,10 @@ The site is published at: <https://sps23.github.io/little-orchard>
 Deployment is automated via the GitHub Actions workflow defined in
 `.github/workflows/build-deploy.yml`.
 
+The repository also includes a root-level Jekyll config so that if GitHub Pages
+builds from the repository root, it still uses `website/` as the site source
+instead of falling back to repository content such as `README.md`.
+
 Every push to the `main` branch triggers:
 
 1. **build-jekyll** – installs Ruby gems and runs `bundle exec jekyll build`.
