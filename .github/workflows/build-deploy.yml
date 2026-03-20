@@ -28,7 +28,6 @@ jobs:
         uses: actions/configure-pages@v5
         with:
           static_site_generator: jekyll
-          generator_config_file: website/_config.yml
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
