@@ -43,10 +43,6 @@ The site is published at: <https://sps23.github.io/little-orchard>
 Deployment is automated via the GitHub Actions workflow defined in
 `.github/workflows/build-deploy.yml`.
 
-The repository also includes a root-level Jekyll config so that if GitHub Pages
-builds from the repository root, it still uses `website/` as the site source
-instead of falling back to repository content such as `README.md`.
-
 Every push to the `main` branch triggers:
 
 1. **build-jekyll** – installs Ruby gems and runs `bundle exec jekyll build`.
@@ -55,6 +51,9 @@ Every push to the `main` branch triggers:
 
 > **Note:** GitHub Pages must be configured to deploy from **GitHub Actions**
 > in the repository settings (*Settings → Pages → Source → GitHub Actions*).
+> If Pages is set to deploy from a branch instead, GitHub will not publish the
+> Jekyll site from `website/` and you can end up seeing repository content or a
+> 404 page instead of the real homepage.
 
 Pull requests run the build step only (no deployment) so you can verify the
 site builds correctly before merging.
