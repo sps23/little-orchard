@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<section class="page-hero">
+  <div class="container">
+    <h1>{{ page.title }}</h1>
+    {% if page.subtitle %}<p class="subtitle">{{ page.subtitle }}</p>{% endif %}
+    <p class="post-meta-hero">
+      <span class="post-date">{{ page.date | date: "%B %-d, %Y" }}</span>
+      {% if page.author %}<span class="post-author"> · {{ page.author }}</span>{% endif %}
+      {% if page.read_time %}<span class="post-read-time"> · {{ page.read_time }} min read</span>{% endif %}
+    </p>
+  </div>
+</section>
+<section class="page-content">
+  <div class="container">
+    <article class="post-body">
+      {{ content }}
+    </article>
+    <div class="post-back mt-xl">
+      <a href="{{ '/news/' | relative_url }}" class="btn btn-outline">← Back to News</a>
+    </div>
+  </div>
+</section>
