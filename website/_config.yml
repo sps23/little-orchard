@@ -23,6 +23,8 @@ navigation:
     url: /enrollment/
   - title: Gallery
     url: /gallery/
+  - title: News
+    url: /news/
   - title: Careers
     url: /career/
   - title: Contact
