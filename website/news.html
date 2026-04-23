@@ -1,0 +1,35 @@
+---
+layout: page
+title: News
+subtitle: Stories, tips, and updates from the Little Orchard team.
+permalink: /news/
+---
+
+<p class="about-intro">
+  Welcome to the Little Orchard News — a place to find childcare insights, activity ideas, and updates from our nursery community. We love sharing what we know and what we're learning alongside your children.
+</p>
+
+{% if site.posts.size > 0 %}
+<div class="post-grid">
+  {% for post in site.posts %}
+  <article class="post-card">
+    <div class="post-card-emoji">{{ post.emoji | default: "📰" }}</div>
+    <div class="post-card-body">
+      <p class="post-card-meta">{{ post.date | date: "%B %-d, %Y" }}{% if post.read_time %} · {{ post.read_time }} min read{% endif %}</p>
+      <h2 class="post-card-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      {% if post.subtitle %}<p class="post-card-subtitle">{{ post.subtitle }}</p>{% endif %}
+      {% if post.excerpt %}<p class="post-card-excerpt">{{ post.excerpt }}</p>{% endif %}
+      <a href="{{ post.url | relative_url }}" class="post-card-link">Read more →</a>
+    </div>
+  </article>
+  {% endfor %}
+</div>
+{% else %}
+<p class="text-center">No posts yet — check back soon!</p>
+{% endif %}
+
+<div class="cta-box mt-xl">
+  <h2>Have a Topic You'd Like Us to Cover?</h2>
+  <p>We love hearing from families. If there's something you'd like us to write about — from sleep routines to school readiness — let us know!</p>
+  <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary">Get in Touch</a>
+</div>
