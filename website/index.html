@@ -74,8 +74,87 @@ title: Home
   </div>
 </section>
 
+<!-- Register Your Interest -->
+<section class="section section-alt" id="register-interest">
+  <div class="container">
+    <h2 class="section-title">Register Your Interest</h2>
+    <p class="section-subtitle">Spaces fill up fast! Share your details below and we'll be in touch within 24 hours to discuss availability and next steps.</p>
+    <div class="interest-form-wrapper">
+      <!-- To activate email notifications:
+           1. Sign up for a free account at https://formspree.io
+           2. Create a new form and copy the form ID
+           3. Replace YOUR_FORM_ID below with your actual Formspree form ID -->
+      <form
+        class="interest-form"
+        action="https://formspree.io/f/YOUR_FORM_ID"
+        method="POST"
+      >
+        <input type="hidden" name="_subject" value="New Interest Registration – Little Orchard">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="parent-name">Parent / Guardian Name <span class="required">*</span></label>
+            <input
+              type="text"
+              id="parent-name"
+              name="parent_name"
+              required
+              placeholder="e.g. Jane Smith"
+              autocomplete="name"
+            >
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address <span class="required">*</span></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="e.g. jane@example.com"
+              autocomplete="email"
+            >
+          </div>
+          <div class="form-group">
+            <label for="child-age">Child's Age <span class="required">*</span></label>
+            <select id="child-age" name="child_age" required>
+              <option value="" disabled selected>Select age…</option>
+              <option value="Under 1 year">Under 1 year</option>
+              <option value="1 year">1 year</option>
+              <option value="2 years">2 years</option>
+              <option value="3 years">3 years</option>
+              <option value="4 years">4 years</option>
+              <option value="5 years">5 years</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="start-date">Preferred Start (Month &amp; Year) <span class="required">*</span></label>
+            <input
+              type="month"
+              id="start-date"
+              name="start_date"
+              required
+            >
+          </div>
+          <div class="form-group form-group--full">
+            <label for="message">Anything else you'd like us to know?</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="3"
+              placeholder="e.g. questions about programmes, specific schedule needs…"
+            ></textarea>
+          </div>
+        </div>
+        <div class="form-footer">
+          <button type="submit" class="btn btn-primary">✉️ Register My Interest</button>
+          <p class="form-note">We'll send a confirmation to your email and aim to respond within 24 hours on business days.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
 <!-- CTA -->
-<section class="section section-alt">
+<section class="section">
   <div class="container">
     <div class="cta-box">
       <h2>Ready to Join Our Family?</h2>
